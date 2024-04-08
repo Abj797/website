@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: abhinav79intellipaat/test17
+        image: abhinav79/test10
         ports:
         - containerPort: 80
