@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nginx-deployment
+  name: capstone-project-deployment
   labels:
-    app: nginx
+    app: capstone-project
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: nginx
+      app: capstone-project
   template:
     metadata:
       labels:
-        app: nginx
+        app: capstone-project
     spec:
       containers:
-      - name: nginx
-        image: abhinav79/test17
+      - name: capstone-project
+        image: abhinav79/capstone_project:latest
         ports:
         - containerPort: 80
