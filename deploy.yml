@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: capstone-project-deployment
+  name: capstone-deployment
   labels:
-    app: capstone-project
+    app: capstone-
 spec:
-  replicas: 2
+  replicas: 3
   selector:
     matchLabels:
-      app: capstone-project
+      app: capstone
   template:
     metadata:
       labels:
-        app: capstone-project
+        app: capstone
     spec:
       containers:
-      - name: capstone-project
-        image: abhinav79/capstone_project:latest
+      - name: capstone
+        image: abhinav79/capstone:latest
         ports:
-        - containerPort: 80
+        - containerPort: 85
